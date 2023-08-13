@@ -1,19 +1,21 @@
 import React from "react";
 import Navbar from "./componets/Navbar";
 import Hero from "./componets/Hero";
-import Analytics from "./componets/Analytics";
-import Newsletter from "./componets/Newsletter";
-import Cards from "./componets/Cards";
+import Plan from "./componets/Plan";
 import Footer from "./componets/Footer";
+import Booking from "./componets/Booking";
+import Contact from "./componets/Contact";
+import Events from "./componets/Events";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Hero />
-      <Analytics />
-      <Newsletter />
-      <Cards />
+      <Events />
+      <Booking />
+      <Plan />
+      <Contact />
       <Footer />
     </div>
   );

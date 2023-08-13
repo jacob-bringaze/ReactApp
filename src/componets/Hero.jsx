@@ -1,39 +1,37 @@
 import React from "react";
 import Typed from "react-typed";
+import Main from "../assets/main.jpg";
 
 function Hero() {
   return (
-    <div className="text-white">
+    <div
+      className="text-white bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${Main})`,
+      }}
+    >
       <div className="max-w-[800px] mt-[-96] w-full h-screen mx-auto text-center flex flex-col justify-center">
-        <img
-          src="./assets/pexels-s-migaj-953182.jpg"
-          alt=""
-          className="bg-center bg-fixed"
-        />
-        <p className="text-[#00df9a] font-bold p-2 uppercase">
-          Growing with data Analytics
-        </p>
-        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
-          Grow with data.
+        <h1 className="md:text-3xl sm:text-2xl text-2xl font-thin md:py-1">
+          Explore Wonderland
         </h1>
         <div className="flex justify-center items-center">
-          <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
-            Fast, Flexible finacing for
+          <p className="md:text-6xl sm:text-4xl text-4xl font-bold py-4 uppercase">
+            Visit us
           </p>
           <Typed
-            className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2"
-            strings={["BTB", "BTC", "SASS"]}
+            className="md:text-6xl sm:text-4xl font-bold text-4xl md:pl-4 pl-2 uppercase"
+            strings={["today.", "tommorow.", "anytime."]}
             typeSpeed={120}
             backSpeed={140}
             loop
           />
         </div>
-        <p className="md:text-2xl text-xl text-gray-500 mx-4">
-          Monitor your data analytics to increase revenue for BTB, BTC, & SASS
-          platforms
+        <p className="md:text-2xl text-lg mx-4 text-[#ffffff71]">
+          Discover breathtaking landscapes and rich cultural heritage at our
+          enchanting tourist destination.
         </p>
-        <button className="bg-[#00df9a] w-[200px] rounded-md my-6 mx-auto py-3 text-black font-bold text-xl">
-          Get Started
+        <button className="bg-transparent w-[200px] rounded-md my-6 mx-auto py-3 font-medium text-xl border-solid border-2 uppercase">
+          Book Now
         </button>
       </div>
     </div>
